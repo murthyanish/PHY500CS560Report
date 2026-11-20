@@ -1,4 +1,12 @@
-\documentclass[12pt,letterpaper]{acmart}
+\documentclass[manuscript,nonacm,12pt,letterpaper]{acmart}
+
+% Strip ACM publication boilerplate (reference format, copyright block,
+% "Manuscript submitted to ACM" footer, DOI, contact-info footnote)
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\acmDOI{}
+\acmISBN{}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -10,6 +18,7 @@
 
 
 \author{Anish Murthy}
+\affiliation{\institution{DigiPen Institute of Technology, Redmond}}
 \title{Simulating an Elastic Body as a Mass Spring System of Particles}
 \begin{document}
 
